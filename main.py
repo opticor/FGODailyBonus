@@ -42,7 +42,8 @@ def main():
                 print(f'{i}th user login failed: {ex}')
                 traceback.print_exc()
 
-        fgourl.UploadFileToRepo(mytime.GetNowTimeFileName(), res, mytime.GetNowTimeFileName())
+        # fgourl.UploadFileToRepo(mytime.GetNowTimeFileName(), res, mytime.GetNowTimeFileName())
+        print(res)
         fgourl.SendMessageToAdmin(res)
     else:
         print('账号密码数量不匹配')
