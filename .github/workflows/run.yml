@@ -6,7 +6,8 @@ name: Python package
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 19 * * *'
+    - cron: '30 6,17 * * *'
+      timezone: 'Asia/Shanghai'
 
 jobs:
   build:
